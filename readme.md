@@ -2,6 +2,8 @@
 
 This allows you to get the same clean version of Brave browser which Brave Origin provides for free.
 
+![screenshot of brave showing the clean look after the policy update](./.assets/brave.png)
+
 ## Installing
 
 ### Linux
