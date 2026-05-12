@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -xe
+
 BRAVE_POLICIES_DIR="/etc/brave/policies/managed/"
 
 test -d "$BRAVE_POLICIES_DIR" || mkdir -p "$BRAVE_POLICIES_DIR"
