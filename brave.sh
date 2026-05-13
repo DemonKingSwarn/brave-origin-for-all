@@ -39,7 +39,7 @@ cat > "$BRAVE_POLICIES_DIR/brave-policies.json" <<-EOF
     "HttpsOnlyMode": "force_enabled",
     "DefaultBraveFingerprintingV2Setting": 3,
     "DefaultCookiesSetting": 4,
-    "DefaultBraveRemember1PStorageSetting": 2,
+    "DefaultBraveRemember1PStorageSetting": 1,
 
     "DnsOverHttpsMode": "secure",
     "DnsOverHttpsTemplates": "https://base.dns.mullvad.net/dns-query",
