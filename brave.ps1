@@ -66,7 +66,8 @@ Set-BravePolicyDWord "DefaultBraveAdblockSetting" 2          # Aggressive = 2
 Set-BravePolicyDWord "DefaultBraveHttpsUpgradeSetting" 2
 Set-BravePolicyString "HttpsOnlyMode" "force_enabled"
 Set-BravePolicyDWord "DefaultBraveFingerprintingV2Setting" 3 # Strict = 3
-Set-BravePolicyDWord "DefaultCookiesSetting" 4               # Block 3rd-party + trackers
+Set-BravePolicyDWord "DefaultCookiesSetting" 1               # Block 3rd-party + trackers
+Set-BravePolicyDWord "BlockThirdPartyCookies" 1               # Block 3rd-party + trackers
 Set-BravePolicyDWord "DefaultBraveRemember1PStorageSetting" 1
 
 # === DNS over HTTPS ===

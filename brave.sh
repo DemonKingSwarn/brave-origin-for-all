@@ -38,7 +38,8 @@ cat > "$BRAVE_POLICIES_DIR/brave-policies.json" <<-EOF
     "DefaultBraveHttpsUpgradeSetting": 2,
     "HttpsOnlyMode": "force_enabled",
     "DefaultBraveFingerprintingV2Setting": 3,
-    "DefaultCookiesSetting": 4,
+    "DefaultCookiesSetting": 1,
+    "BlockThirdPartyCookies": true,
     "DefaultBraveRemember1PStorageSetting": 1,
 
     "DnsOverHttpsMode": "secure",
