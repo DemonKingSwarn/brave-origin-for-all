@@ -9,13 +9,20 @@ This allows you to get the same clean version of Brave browser which Brave Origi
 ### Linux
 
 ```sh
-curl -sL "https://github.com/DemonKingSwarn/brave-origin-for-all/raw/refs/heads/master/brave.sh" | sudo bash -
+curl -sL "https://github.com/DemonKingSwarn/brave-origin-for-all/raw/refs/heads/master/scripts/linux.sh" | sudo bash -
 ```
+
+### MacOS
+
+```sh
+curl -sL "https://github.com/DemonKingSwarn/brave-origin-for-all/raw/refs/heads/master/scripts/macos.sh" | sudo bash -
+```
+
 
 ### Windows
 
 - Launch the Terminal app as admin
 
 ```powershell
-irm https://github.com/DemonKingSwarn/brave-origin-for-all/raw/refs/heads/master/brave.ps1 | iex
+irm https://github.com/DemonKingSwarn/brave-origin-for-all/raw/refs/heads/master/scripts/windows.ps1 | iex
 ```

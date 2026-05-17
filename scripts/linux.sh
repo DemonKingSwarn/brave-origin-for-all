@@ -49,3 +49,5 @@ cat > "$BRAVE_POLICIES_DIR/brave-policies.json" <<-EOF
     "DefaultJavaScriptJitSetting": 2
 }
 EOF
+
+echo "Done! Restart Brave"

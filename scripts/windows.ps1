@@ -1,28 +1,16 @@
-# =============================================================================
-# PowerShell Script: Apply Brave Browser Privacy / Debloat Policies (Windows)
-# =============================================================================
-# This script sets managed policies via the Windows Registry.
-# Run as Administrator.
-# After running, restart Brave (or reboot) for changes to take effect.
-# Check brave://policy to verify.
-# =============================================================================
-
 $PolicyPath = "HKLM:\SOFTWARE\Policies\BraveSoftware\Brave"
 
-# Create the policy path if it doesn't exist
 if (-not (Test-Path $PolicyPath)) {
     New-Item -Path $PolicyPath -Force | Out-Null
     Write-Host "Created policy registry path." -ForegroundColor Green
 }
 
-# Helper function to set DWORD (for booleans/numbers)
 function Set-BravePolicyDWord {
     param([string]$Name, [int]$Value)
     Set-ItemProperty -Path $PolicyPath -Name $Name -Value $Value -Type DWord -Force
     Write-Host "Set $Name = $Value" -ForegroundColor Cyan
 }
 
-# Helper function to set String
 function Set-BravePolicyString {
     param([string]$Name, [string]$Value)
     Set-ItemProperty -Path $PolicyPath -Name $Name -Value $Value -Type String -Force
